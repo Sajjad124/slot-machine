@@ -1,16 +1,25 @@
-import React from 'react';
+import React from "react";
+import "./App.css";
 
-import './App.css';
+const slotM = () =>{
+  let x  = " 😄 "
+}
 
-
-
-
-const App = ()=> {
+const App = () => {
   return (
-    <div className="App">
-      <h1 className='heading_style'> Welcome to <span style={{fontWeight:"bold"}}>Slot Machine game</span></h1>
+    <div>
+      <div className="App">
+        <h1 className="heading_style">
+          {" "}
+          Welcome to{" "}
+          <span style={{ fontWeight: "bold" }}>🎰 Slot Machine game 🎰</span>
+        </h1>
+      </div>
+      <div>
+        <slotM/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
