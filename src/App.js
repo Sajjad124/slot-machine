@@ -1,8 +1,21 @@
 import React from "react";
 import "./App.css";
 
-const slotM = () =>{
+const SlotM = () =>{
   let x  = " 😄 "
+  let y  = " 😄 "
+  let z  = " 😄 "
+  if((x===y) && (y===z)){
+    return (
+      <div>
+        <div className="slot_inner">
+          <h1>{x} {y} {z}</h1>
+          <h1>This is matching</h1>
+          <hr/>
+        </div>
+      </div>
+    )
+  }
 }
 
 const App = () => {
@@ -14,9 +27,7 @@ const App = () => {
           Welcome to{" "}
           <span style={{ fontWeight: "bold" }}>🎰 Slot Machine game 🎰</span>
         </h1>
-      </div>
-      <div>
-        <slotM/>
+        <SlotM/>
       </div>
     </div>
   );
